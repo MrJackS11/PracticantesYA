@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Postulaciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      background-color: #e9e9e9;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: #000;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+
+    .profile-img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .postulaciones-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .postulaciones-container h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .postulacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .postulacion:last-child {
+      border-bottom: none;
+    }
+
+    .info {
+      flex-grow: 1;
+    }
+
+    .info p {
+      margin: 4px 0;
+    }
+
+    .estado {
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      color: white;
+    }
+
+    .en-revision {
+      background-color: orange;
+    }
+
+    .aceptado {
+      background-color: green;
+    }
+
+    .rechazado {
+      background-color: crimson;
+    }
+
+    .btn-detalle {
+      background-color: black;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="correo" width="30">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="postulaciones.html">Mis postulaciones</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="#">Cerrar sesión</a>
+    </nav>
+    <div class="profile-img">
+      <img src="https://i.pinimg.com/originals/4b/b2/bb/4bb2bb45bd21bb55053cebbd672b85f2.jpg" alt="Usuario">
+    </div>
+  </header>
+
+  <div class="postulaciones-container">
+    <h2>Mis Postulaciones</h2>
+
+    <div class="postulacion">
+      <div class="info">
+        <p><strong>Empresa:</strong> Innovasoft</p>
+        <p><strong>Cargo:</strong> Asistente de Desarrollo Web</p>
+        <p><strong>Fecha:</strong> 03/06/2025</p>
+      </div>
+      <span class="estado en-revision">En Revisión</span>
+      <a href="#" class="btn-detalle">Ver detalles</a>
+    </div>
+
+    <div class="postulacion">
+      <div class="info">
+        <p><strong>Empresa:</strong> EcoTech</p>
+        <p><strong>Cargo:</strong> Pasante en TI</p>
+        <p><strong>Fecha:</strong> 28/05/2025</p>
+      </div>
+      <span class="estado aceptado">Aceptado</span>
+      <a href="#" class="btn-detalle">Ver detalles</a>
+    </div>
+
+    <div class="postulacion">
+      <div class="info">
+        <p><strong>Empresa:</strong> FinanSmart</p>
+        <p><strong>Cargo:</strong> Soporte Técnico</p>
+        <p><strong>Fecha:</strong> 20/05/2025</p>
+      </div>
+      <span class="estado rechazado">Rechazado</span>
+      <a href="#" class="btn-detalle">Ver detalles</a>
+    </div>
+  </div>
+
+</body>
+</html>
